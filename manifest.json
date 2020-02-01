@@ -2,7 +2,7 @@
     "manifest_version": 2,
   
     "name": "Foot",
-    "description": "A description of the Extension",
+    "description": "Chrome extension to help online shoppers take a step into searching for more conscious and eco-friendly products!",
     "version": "1.0",
   
     "permissions": [
@@ -12,6 +12,6 @@
     "browser_action": {
       "default_title": "Extension Title on Hover",
       "default_icon": "images/Logo.png",
-      "default_popup": "foot_extension.html"
+      "default_popup": "about.html"
     }
   }
