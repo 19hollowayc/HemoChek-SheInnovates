@@ -39,6 +39,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/searchbox.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -214,32 +215,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="page">
-			<h1>Salon</h1>
-			<div class="navigation">
-				{% if g.user %}
-				  <a href="{{ url_for('logout') }}">sign out [{{ g.user.username }}]</a>
-				{% else %}
-				  <a href="{{ url_for('register') }}">sign up</a> |
-				  <a href="{{ url_for('login') }}">sign in</a>
-				{% endif %}
-				</div>
-			{% with flashes = get_flashed_messages() %}
-			{% if flashes %}
-			<ul class="flashes">
-				{% for message in flashes %}
-				<li>{{ message }}
-					{% endfor %}
-			</ul>
-			{% endif %}
-			{% endwith %}
-			<div class="body">
-				{% block body %}{% endblock %}
-			</div>
-			<div class="footer">
-				Salon &mdash; A Flask Application
-			</div>
-		</div>
+
 		<footer id="colorlib-footer">
 			<div class="container">
 				<div class="row row-pb-md">
@@ -277,20 +253,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="copy">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<p>
-								 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br> 
-								 Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		</footer>
 	</div>
 
@@ -326,7 +289,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   			position: relative;
   			vertical-align:middle;
 		}
-	</style >
+	</style>
 	
 	</body>
 </html>
