@@ -1,0 +1,17 @@
+  {
+    "manifest_version": 2,
+  
+    "name": "Foot",
+    "description": "A description of the Extension",
+    "version": "1.0",
+  
+    "permissions": [
+      "storage"
+    ],
+  
+    "browser_action": {
+      "default_title": "Extension Title on Hover",
+      "default_icon": "images/Logo.png",
+      "default_popup": "html/foot_extension.html"
+    }
+  }
