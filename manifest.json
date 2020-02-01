@@ -12,6 +12,6 @@
     "browser_action": {
       "default_title": "Extension Title on Hover",
       "default_icon": "images/Logo.png",
-      "default_popup": "foot_extension.html"
+      "default_popup": "about.html"
     }
   }
